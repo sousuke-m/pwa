@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+    <title>Minimum PWA</title>
+    <meta property="og:image" content="icon256x256.png">
+    <link rel="shortcut icon" type="image/png" href="icon256x256.png">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <button type="button" onclick="alert('UUID: ' + crypto.randomUUID())">Generate</button>
+    <script>
+        window.addEventListener("load", (e) => {
+            if ("serviceWorker" in navigator) {
+                navigator.serviceWorker.register("./sw.js");
+            }
+        });
+    </script>
+</body>
+</html>
