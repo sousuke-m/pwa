@@ -1,7 +1,7 @@
 {
     "name": "PWAテスト",
     "display": "PWAテスト",
-    "id": "03a25b2d-b372-4e5e-8daa-eb5012b66ac5", 
+    "id": "1f3bf622-a26b-6cb3-9cc4-fa2c7b3c0df1", 
     "scope": "/pwa/",
     "start_url": "/pwa/index.html",
     "icons": [
