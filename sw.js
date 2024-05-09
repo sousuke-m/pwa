@@ -1,5 +1,5 @@
-const APP_NAME = "mini-pwa";
-const VERSION = "202404282040JST";
+const APP_NAME = "pwa-test";
+const VERSION = "202405091740JST";
 
 // このサービスワーカーのキャッシュデータであることを示すキーとなる文字列
 // バージョン番号を入れることで、ソースがアップデートされたときに
@@ -10,9 +10,9 @@ const CACHE_NAME = APP_NAME + "_" + VERSION;
 // jsファイルやcssファイル、画像ファイルなどがあればそれもリストアップしておくと良い
 // ここで言う"/"はサービスワーカーとなるJavaScriptファイルがあるディレクトリを指す
 const assets = [
-  "/mini-pwa/",
-  "/mini-pwa/index.html",
-  "/mini-pwa/icon256x256.png",
+  "/pwa/",
+  "/pwa/index.html",
+  "/pwa/icon.png",
 ];
 
 /**
