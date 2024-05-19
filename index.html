@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<head>
+<head lang="ja">
+    <meta charset="UTF-8">
     <title>PWAテスト</title>
-    <meta property="og:image" content="icon.png">
+    <meta name="theme-color" content="#ffffff">
     <link rel="shortcut icon" type="image/png" href="icon.png">
     <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="manifest.webmanifest" />
+    <script async src="https://cdn.jsdelivr.net/npm/pwacompat" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <button type="button" onclick="alert('UUID: ' + crypto.randomUUID())">Generate</button>
-    <script>
-        window.addEventListener("load", (e) => {
-            if ("serviceWorker" in navigator) {
-                navigator.serviceWorker.register("./sw.js");
-            }
-        });
-    </script>
+    <script>window.addEventListener("load", (e) => {if ("serviceWorker" in navigator) {navigator.serviceWorker.register("sw.js");}});</script>
 </body>
 </html>
